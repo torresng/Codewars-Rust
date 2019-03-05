@@ -6,9 +6,6 @@ pub fn solution(n: f64) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    /*
-     *use solution;
-     */
     use super::*;
     use rand;
 
