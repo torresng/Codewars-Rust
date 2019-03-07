@@ -1,11 +1,8 @@
 pub fn reverse_words(str: &str) -> String {
-    let words = str.split(" ").collect::<Vec<&str>>();
-    let mut vec = Vec::new();
-    for w in &words {
-        let wrev = w.chars().rev().collect::<String>();
-        vec.push(wrev);
-    }
-    vec.join(" ")
+    str.split(" ")
+        .map(|w| w.chars().rev().collect())
+        .collect::<Vec<String>>()
+        .join(" ")
 }
 
 #[cfg(test)]
