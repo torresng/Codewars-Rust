@@ -1,11 +1,10 @@
 pub fn duplicate_encode(word: &str) -> String {
+    let word = word.to_lowercase();
     let mut counts = std::collections::HashMap::new();
-    for w in word.to_lowercase().chars() {
+    for w in word.chars() {
         *counts.entry(w).or_insert(0) += 1;
     }
-    let mut res = String::new();
-    word.to_lowercase()
-        .chars()
+    word.chars()
         .map(|c| match *counts.get(&c).unwrap() {
             1 => '(',
             _ => ')',
