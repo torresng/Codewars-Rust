@@ -1,24 +1,24 @@
 pub fn prime_factors(n: i64) -> String {
-    let mut mp = std::collections::BTreeMap::new();
+    let mut prime_numbers = Vec::new();
+    let mut number = n;
     let mut prime = 2;
-    let mut test = n;
-    while prime <= test {
-        if test % prime == 0 {
-            test /= prime;
-            *mp.entry(prime).or_insert(0) += 1;
-        } else {
-            prime += 1;
+    let mut cnt;
+    while number > 1 {
+        cnt = 0;
+        while number % prime == 0 {
+            number /= prime;
+            cnt += 1;
         }
-    }
-    let mut output = String::from("");
-    for (key, val) in mp.iter() {
-        if *val != 1 {
-            output.push_str(format!("({}**{})", key, val).as_str());
-        } else {
-            output.push_str(format!("({})", key).as_str());
+        if cnt > 0 {
+            if cnt > 1 {
+                prime_numbers.push(format!("({}**{})", prime, cnt));
+            } else {
+                prime_numbers.push(format!("({})", prime));
+            }
         }
+        prime += 1;
     }
-    output
+    prime_numbers.join("")
 }
 
 #[cfg(test)]
