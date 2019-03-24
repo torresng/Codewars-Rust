@@ -1,0 +1,8 @@
+[package]
+name = "grasshopper_-_Terminal_game_move_function"
+version = "0.1.0"
+authors = ["Torres Ng <torresng2684cte@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
