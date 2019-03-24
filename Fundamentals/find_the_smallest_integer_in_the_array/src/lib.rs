@@ -1,11 +1,5 @@
 pub fn find_smallest_int(arr: &[i32]) -> i32 {
-    let mut small = i32::max_value();
-    for x in arr {
-        if *x < small {
-            small = *x;
-        }
-    }
-    small
+    *arr.iter().min().unwrap()
 }
 
 #[cfg(test)]
