@@ -1,5 +1,5 @@
 pub fn get_age(age: &str) -> u32 {
-    age.get(0..1).unwrap().parse().unwrap()
+    age[0..1].parse().unwrap()
 }
 
 #[cfg(test)]
