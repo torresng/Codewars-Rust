@@ -12,6 +12,6 @@ Your mission is to implement a function htmlspecialchars() that converts the fol
 
 Good luck :D
 
-## Extension
+#### Extension
 
 If you are an experienced Javascript programmer, try shortening your code as much as possible and optimise it to minimise run time. Experienced programmers should be able to complete this exercise in one line of code.

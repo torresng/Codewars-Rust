@@ -1,6 +1,6 @@
 ## SequenceSum
 
-### Sum of 'n' Numbers
+#### Sum of 'n' Numbers
 
 A sequence or a series, in mathematics, is a string of objects, like numbers, that follow a particular pattern. The individual elements in a sequence are called terms.
 
@@ -39,7 +39,7 @@ sum_of_n (or SequenceSum.sumOfN in Java, SequenceSum.SumOfN in C#) takes an inte
 
 Wikipedia reference for abs value is available here.
 
-### Example:
+#### Example:
 
 5 -> [0, 1, 3, 6, 10, 15]
 

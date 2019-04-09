@@ -2,7 +2,7 @@
 
 Very simple, given a number, find its opposite.
 
-Examples:
+#### Examples:
 
 ```
 1: -1

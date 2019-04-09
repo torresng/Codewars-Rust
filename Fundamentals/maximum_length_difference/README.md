@@ -14,7 +14,7 @@ a2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"]
 mxdiflg(a1, a2) --> 13
 ```
 
-### Bash note:
+#### Bash note:
 
 - input : 2 strings with substrings separated by ,
 - output: number as a string

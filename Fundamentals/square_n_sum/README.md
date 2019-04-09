@@ -1,6 +1,6 @@
 ## Square(n) Sum
 
-### Description:
+#### Description:
 
 Complete the square sum method so that it squares each number passed into it and then sums the results together.
 
